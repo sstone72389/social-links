@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Social links</title>
-  </head>
-  <body>
-    <div class="social-block">
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.purehockey.com/c/how-to-fit-a-hockey-player"
-      target="popup"
-      onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A//www.purehockey.com/c/how-to-fit-a-hockey-player','popup','width=600,height=600'); return false;"><img class="share-link" src="./img/facebook.png" alt="facebook link"></a>
-    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.purehockey.com%2Fc%2Fhow-to-fit-a-hockey-player"
-      target="popup"
-      onclick="window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.purehockey.com%2Fc%2Fhow-to-fit-a-hockey-player','popup','width=600,height=600'); return false;"><img class="share-link" src="./img/twitter.png" alt="twitter link"></a>
-    <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.purehockey.com%2Fc%2Fhow-to-fit-a-hockey-player"
-      target="popup"
-      onclick="window.open('https://plus.google.com/share?url=https%3A%2F%2Fwww.purehockey.com%2Fc%2Fhow-to-fit-a-hockey-player','popup','width=600,height=600'); return false;"><img class="share-link" src="./img/gplus.png" alt="google plus link"></a>
+
+<head>
+  <meta charset="utf-8">
+  <title>Social links</title>
+</head>
+
+<body>
+  <div class="social-block">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.purehockey.com/c/how-to-fit-a-hockey-player" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A//www.purehockey.com/c/how-to-fit-a-hockey-player','popup','width=600,height=600'); return false;"><img class="share-link" src="./img/facebook.png" alt="facebook link"></a>
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.purehockey.com%2Fc%2Fhow-to-fit-a-hockey-player" target="popup" onclick="window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.purehockey.com%2Fc%2Fhow-to-fit-a-hockey-player','popup','width=600,height=600'); return false;"><img class="share-link" src="./img/twitter.png" alt="twitter link"></a>
+    <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.purehockey.com%2Fc%2Fhow-to-fit-a-hockey-player" target="popup" onclick="window.open('https://plus.google.com/share?url=https%3A%2F%2Fwww.purehockey.com%2Fc%2Fhow-to-fit-a-hockey-player','popup','width=600,height=600'); return false;"><img class="share-link" src="./img/gplus.png" alt="google plus link"></a>
     <a href="javascript:emailCurrentPage()"><img class="share-link" src="./img/email.png" alt="email link"></a>
-    </div>
+  </div>
 
-    <script language="javascript">
-            function emailCurrentPage(){
-                window.location.href="mailto:?subject="+document.title+"&body="+escape("Check out this great article from Pure Hockey: " + window.location.href);
-            }
-    </script>
+  <script language="javascript">
+    function emailCurrentPage() {
+      window.location.href = "mailto:?subject=" + document.title + "&body=" + escape("Check out this great article from Pure Hockey: " + window.location.href);
+    }
+  </script>
 
-    <style>
+  <style>
+    .social-block {
+      float: right;
+    }
+
     .share-link {
       border-radius: 4px;
+      float: left;
+      margin-right: 5px;
     }
-    </style>
-  </body>
+
+    @media screen and (max-width: 767px) {
+      .social-block {
+        float: left;
+      }
+    }
+  </style>
+</body>
+
 </html>
